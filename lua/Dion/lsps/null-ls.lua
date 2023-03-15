@@ -14,8 +14,8 @@ null_ls.setup({
 		-- https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md
 		formatting.black.with({ extra_args = { "--fast" } }), --pip3 install
 		formatting.stylua, --cargo install
-                formatting.goline,   -- go install github.com/segmentio/golines@latest
-                formatting.terra_fmt,  --install with terraform
+                formatting.golines,   -- go install github.com/segmentio/golines@latest
+                formatting.terrafmt,  --install with terraform
 		diagnostics.flake8, --pip3 install
                 diagnostics.goclangci_lint,  --curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.51.2
                 diagnostics.ansiblelint,   --pip3 install 
