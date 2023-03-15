@@ -46,6 +46,35 @@ packer.startup { function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "rebelot/kanagawa.nvim" -- kangawa colorscheme
+  use "windwp/nvim-autopairs" -- autopairs bracket
+
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp" -- better completetion when editing nvim config
+  use "hrsh7th/cmp-nvim-lua" -- work on top of nvim cmp and nvim-lsp for better completion
+
+  use "BurntSushi/ripgrep"  -- Telescope to work propertly
+  use "karb94/neoscroll.nvim" -- Smooth scrolling half page with zt and cf
+  use "lukas-reineke/indent-blankline.nvim" -- Give indenting guide 
+
+
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use "neovim/nvim-lspconfig" -- Configs for nvim lsp
+  use "norcalli/nvim-colorizer.lua"
+  use "mattn/emmet-vim"
+  use "williamboman/mason.nvim" -- simple to use language server installer
+  use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
+  use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
+  use "nvim-telescope/telescope.nvim" -- Telescope plugins
+  --  use "nvim-telescope/telescope-file-browser.nvim" -- Filebrowser for tree sitter minimal than nvim tree
+
+-- lualine
+
+
 
 end, config = {
   max_jobs = 16,
