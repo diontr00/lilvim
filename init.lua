@@ -9,5 +9,13 @@ require('Dion.speed-up')
 require('Dion.telescope')
 require('Dion.emmet')
 require('Dion.lsps')
+require('Dion.telescopes')
+require('Dion.treesitter')
+require('Dion.autopairs') 
+require('Dion.comments')
+require('Dion.nvim-tree')
+require('Dion.augroup')
+
+
 
 

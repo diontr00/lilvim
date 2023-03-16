@@ -64,15 +64,18 @@ packer.startup { function(use)
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
   use "neovim/nvim-lspconfig" -- Configs for nvim lsp
-  use "norcalli/nvim-colorizer.lua"
-  use "mattn/emmet-vim"
+  use "norcalli/nvim-colorizer.lua" --review color directly on code
+  use "mattn/emmet-vim" --Support for Emmet 
   use "williamboman/mason.nvim" -- simple to use language server installer
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
   use "nvim-telescope/telescope.nvim" -- Telescope plugins
   --  use "nvim-telescope/telescope-file-browser.nvim" -- Filebrowser for tree sitter minimal than nvim tree
+  use "numToStr/Comment.nvim" -- Use to comment stuff
+  use { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" }
+  use 'akinsho/bufferline.nvim' -- Support bufferline
+  
 
--- lualine
 
 
 
