@@ -20,4 +20,3 @@ require('Dion.gitsigns')
 require('Dion.status-line')
 require('Dion.bufferline')
 
--- --hello 
