@@ -15,7 +15,9 @@ require('Dion.autopairs')
 require('Dion.comments')
 require('Dion.nvim-tree')
 require('Dion.augroup')
+require('Dion.toggleterm')
+require('Dion.gitsigns')
+require('Dion.status-line')
+require('Dion.bufferline')
 
-
-
-
+-- --hello 

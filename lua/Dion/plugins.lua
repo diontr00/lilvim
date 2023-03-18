@@ -47,7 +47,6 @@ packer.startup { function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "rebelot/kanagawa.nvim" -- kangawa colorscheme
   use "windwp/nvim-autopairs" -- autopairs bracket
-
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
@@ -55,12 +54,9 @@ packer.startup { function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp" -- better completetion when editing nvim config
   use "hrsh7th/cmp-nvim-lua" -- work on top of nvim cmp and nvim-lsp for better completion
-
   use "BurntSushi/ripgrep"  -- Telescope to work propertly
   use "karb94/neoscroll.nvim" -- Smooth scrolling half page with zt and cf
   use "lukas-reineke/indent-blankline.nvim" -- Give indenting guide 
-
-
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
   use "neovim/nvim-lspconfig" -- Configs for nvim lsp
@@ -74,11 +70,22 @@ packer.startup { function(use)
   use "numToStr/Comment.nvim" -- Use to comment stuff
   use { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" }
   use 'akinsho/bufferline.nvim' -- Support bufferline
-  
-
-
-
-
+  use "lewis6991/gitsigns.nvim" -- Support for git
+  use "kyazdani42/nvim-web-devicons" -- Some of the icon for status line and stuff
+  use 'moll/vim-bbye'  --delete buffer and close file for bufferline keymap 
+  use 'akinsho/toggleterm.nvim' --toglle the terminal inside nvim
+  use {
+    'goolord/alpha-nvim', --customize front screen
+    requires = { 'nvim-tree/nvim-web-devicons' },
+    config = function()
+      require 'alpha'.setup(require 'alpha.themes.startify'.config)
+    end
+  }
+  use {
+    "nvim-treesitter/nvim-treesitter", --treesitter for directory view 
+    run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow" --rainbow parentheses
 end, config = {
   max_jobs = 16,
   compile_path = packer_util.join_paths(fn.stdpath("data"), "site", "lua", "packer_compiled.lua"),
