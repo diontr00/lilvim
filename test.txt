@@ -1,4 +1,0 @@
-/Users/khanhanhtr/khanhanh/lilNvim/Font/Hack Regular Nerd Font Complete.ttf
-/Users/khanhanhtr/khanhanh/lilNvim/Font/Hack Italic Nerd Font Complete.ttf
-/Users/khanhanhtr/khanhanh/lilNvim/Font/Hack Bold Italic Nerd Font Complete.ttf
-/Users/khanhanhtr/khanhanh/lilNvim/Font/Hack Bold Nerd Font Complete.ttf
