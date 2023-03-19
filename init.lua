@@ -19,4 +19,4 @@ require('Dion.toggleterm')
 require('Dion.gitsigns')
 require('Dion.status-line')
 require('Dion.bufferline')
-
+require('Dion.hello')
