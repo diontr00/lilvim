@@ -9,8 +9,18 @@ local server = {
   "cssls",
   "html",
   "terraformls", 
+  "vuels", 
   "volar", 
-  "jsonls"
+  "jsonls", 
+  "golines", 
+  "terrafmt", 
+  "flake8", 
+  "goclangcli_lint", 
+  "ansible_lint", 
+  "terraform_validate", 
+  "beautysh", 
+  "prettierd", 
+  "eslint_d", 
 }
 
 local settings = {
